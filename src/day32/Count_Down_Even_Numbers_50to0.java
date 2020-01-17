@@ -1,6 +1,6 @@
 package day32;
 import javax.swing.plaf.IconUIResource;
-public class Count_Down_By_Even_Number_From_50to0 {
+public class Count_Down_Even_Numbers_50to0 {
     /**
      * create a method that has no parameter
      * and count Down By Even Number From 50 to 0

@@ -35,7 +35,6 @@ public class ArrayPracticeWithMethod {
         String[] names1 = {"Superman", "Batman", "Flash"};
         String[] names2 = {"Wonder Woman", "Cyborg", "Aquaman"};
         compare2arraySize(names1, names2);
-
     }
 
     //printArrayItems
