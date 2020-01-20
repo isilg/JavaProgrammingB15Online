@@ -8,9 +8,10 @@ public class MethodWithReturnData_2 {
 
     public static double divide(double num1, double num2){
         if(num2==0){
-            return 0.0;
+            return 0.0 ;
         }else {
             return num1/num2;
         }
     }
+
 }

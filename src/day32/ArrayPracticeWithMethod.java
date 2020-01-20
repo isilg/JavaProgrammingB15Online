@@ -9,6 +9,7 @@ public class ArrayPracticeWithMethod {
 
         //this is assigning the array object into a variable
         //and then pass it into the method
+        //DONT USE NEW KEYWORD IF YOU ARE DOING THIS WAY
         int[] scores = {2,5,8,23,4,5,6};
         printArrayItems(scores);
 
@@ -30,11 +31,15 @@ public class ArrayPracticeWithMethod {
 
 
         System.out.println();
+        // If u r doing this way use key word
+        // Choosing the below method no need to use new keyword
         compare2arraySize( new String[]{"Sezgin", "Senay","Astrit"}, new String[]{"Araz"} );
 
+        //no need to use new keyword
         String[] names1 = {"Superman", "Batman", "Flash"};
         String[] names2 = {"Wonder Woman", "Cyborg", "Aquaman"};
         compare2arraySize(names1, names2);
+
     }
 
     //printArrayItems

@@ -1,7 +1,13 @@
 package test;
-
 public class Reversing_PrintingDashBetween {
     public static void main(String[] args) {
+
+        comp2Array(new int[]{1,2,3} , new int[]{5,6-9,11,21});
+
+
+
+
+
 
         String name = "Isil";
         //index:       0123
@@ -34,5 +40,15 @@ public class Reversing_PrintingDashBetween {
         }
 
 
+
+
+    }
+    public static void comp2Array(int[] arr1, int[] arr2){
+        if (arr1.length > arr2.length){
+            System.out.println("Array 1 has more item");
+        }else if(arr2.length > arr1.length){
+            System.out.println("Array 2 has more item");
+        }else
+            System.out.println("They have same amount of element");
     }
 }

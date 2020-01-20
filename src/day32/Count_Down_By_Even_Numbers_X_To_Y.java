@@ -1,6 +1,6 @@
 package day32;
 import javax.management.MBeanAttributeInfo;
-public class Count_Down_Even_Numbers_X_To_Y {
+public class Count_Down_By_Even_Numbers_X_To_Y {
     public static void main(String[] args) {
 
         countDownByEvenNumbersXToY(20,2);
