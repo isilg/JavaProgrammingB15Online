@@ -6,8 +6,8 @@ public class Build_3Digit_Numbers {
      * and it will return the 3 digit numbers you have build
      * for example digit 1 is 3, digit 2 7, digit 3 is 6 -->> 376
      * if any of digit1 digit2 digit3 is not within the range of 0-9
-     * then change it to 0. for example if a digit is 69 since it
-     * is out of the 0-9 range it will be assumed as 0
+     * then change it to 0. For example if digit is 69, since it
+     * is out of the 0-9 range, it will be assumed as 0
      *   for example :
      *     build3DigitNumber(4,2,4) --->> 424
      *     build3DigitNumber(0,2,1) --->> 21
