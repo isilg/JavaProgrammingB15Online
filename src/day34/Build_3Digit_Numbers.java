@@ -2,9 +2,9 @@ package day34;
 public class Build_3Digit_Numbers {
     /**
      * write a method called build3DigitNumber
-     * it has 3 int parameters digit1 digit2 digit3
+     * @param  3 int parameters : digit1 digit2 digit3
      * and it will return the 3 digit numbers you have build
-     * for example 376 -->digit 1 is 3, digit 2 7, digit 3 is 6
+     * for example digit 1 is 3, digit 2 7, digit 3 is 6 -->> 376
      * if any of digit1 digit2 digit3 is not within the range of 0-9
      * then change it to 0. for example if a digit is 69 since it
      * is out of the 0-9 range it will be assumed as 0
@@ -15,7 +15,6 @@ public class Build_3Digit_Numbers {
      */
 
     public static void main(String[] args) {
-
         System.out.println( build3DigitNumber(6,4,0) );
         System.out.println( build3DigitNumber(0,2,1) );
         System.out.println( build3DigitNumber(65,6,9) );
