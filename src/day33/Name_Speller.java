@@ -1,5 +1,5 @@
 package day33;
-public class name_Speller {
+public class Name_Speller {
     /**
      * Create a method called getSpelledName
      * This method will put dash in between given String

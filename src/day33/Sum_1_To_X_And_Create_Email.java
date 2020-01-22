@@ -1,6 +1,6 @@
 package day33;
 
-public class sum_1_To_X_And_Create_Email {
+public class Sum_1_To_X_And_Create_Email {
     /**
      * TASK 01:
      * getSumFrom1ToX method calculates the sum of

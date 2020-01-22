@@ -1,6 +1,6 @@
 package day30;
 import java.util.Arrays;
-public class carInventory_2 {
+public class Car_Inventory_2 {
     public static void main(String[] args) {
 
         String[] cars = {

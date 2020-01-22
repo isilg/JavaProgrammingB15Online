@@ -6,6 +6,8 @@ public class Calculator {
      */
 
     public static void main (String[] args){
+        //these values we pass called argument
+        // 6 is an argument, 23 is another argument
         add(6,23);
         add(16,3);
         add(1,6);

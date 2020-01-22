@@ -1,5 +1,5 @@
 package day33;
-public class convert_Number_To_Day {
+public class Convert_Number_To_Day {
     /**
      * getDaysOfTheWeekFromNumber method will take number from 1-7
      * and convert that to actual day in word

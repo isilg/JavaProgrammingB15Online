@@ -1,5 +1,5 @@
 package day33;
-public class calculateAge {
+public class Calculate_Age {
     public static void main(String[] args) {
         /**
          * calculateAndReturnAge
@@ -12,6 +12,7 @@ public class calculateAge {
          * if the birth year is not within 1900-2020 then return 0
          */
 
+        //1982 is called argument
         System.out.println( calculateAge(1982) );
     }
 

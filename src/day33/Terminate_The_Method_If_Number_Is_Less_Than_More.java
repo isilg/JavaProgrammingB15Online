@@ -2,7 +2,7 @@ package day33;
 
 import java.util.Scanner;
 
-public class terminate_The_Method_If_Number_Is_Less_Than_More {
+public class Terminate_The_Method_If_Number_Is_Less_Than_More {
     /**
      * If user enter a number that is less than 10
      * Terminate the method

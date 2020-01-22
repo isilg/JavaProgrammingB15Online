@@ -1,6 +1,5 @@
 package day30;
-
-public class carInventory {
+public class Car_Inventory {
     public static void main(String[] args) {
 
         String[] cars = {"Acura-NSX",
