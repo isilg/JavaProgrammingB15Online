@@ -14,6 +14,13 @@ public class MethodOverloading2 {
      * 	4th add
      * 		has 2 long parameters and add them to get sum
      * 		and print out the result
+     *
+     * 	MAIN E DIREK ADD(100) YAZ VE HOVER OVER IT AND CLICK
+     * 	CREATE METHOD 'ADD' AND SAVE TIME.
+     *
+     * 	METHOD OVERLOADING WILL BE ASK @THE INTERVIEW
+     * 	WHAT IS METHOD OVERLOADING AND WHAT IS METHOD OVERRIDING
+     * 	WHAT ARE THE DIFFERENCES?
      */
     public static void main(String[] args) {
         add(10);
