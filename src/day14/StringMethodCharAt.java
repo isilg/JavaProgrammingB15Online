@@ -1,5 +1,4 @@
 package day14;
-
 public class StringMethodCharAt {
     public static void main(String[] args) {
 
@@ -12,6 +11,14 @@ public class StringMethodCharAt {
         System.out.print(name.charAt(2));
         System.out.print(name.charAt(3));
         //System.out.println( name.charAt(4));  IF I WRITE THAT, IT GIVES STRING INDEX OUT OF BOUND
+
+        System.out.println("\n");
+
+        //ILK 2 HARF BOYLE CONCATENATION YAPILMAZ, SAYI DONER BOYLE
+        //charAt kullanma, substring kullan
+        //System.out.print(name.charAt(0)+name.charAt(1));
+        System.out.println(name.substring(0, 2)+name.substring(0, 2)+name.substring(0, 2));
+
 
         System.out.println("\n");
 
