@@ -5,12 +5,14 @@ public class Integer_parseInt_Method_Return_String_To_Number {
     public static void main(String[] args) {
         /**
          ************INTERVIEW QUESTION: RETURN A STRING TO AN INT ***************
-         * Integer.parseInt() method will turn a String to int result that has only numbers
-         * and return int result
+         * Integer.parseInt() method will turn a String to int result, primitive result.
          * If we have any non-numerical character -->> It will throw NumberFormatException
          * Integer class ->> is class coming from java.lang package
          * It's primarily used for wrapping up primitive value and treat it as an object.
          * parseInt    ->> is a static method of Integer class
+         * Integer.valueOf() -->> take int and return an Integer object
+         * EX/ int count = Integer.valueOf() -->> return an object then unbox it
+         * into count,  saving it into an int variable
          */
 
         String strNum = "100";

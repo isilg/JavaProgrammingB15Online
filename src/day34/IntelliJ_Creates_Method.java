@@ -21,14 +21,11 @@ public class IntelliJ_Creates_Method {
             System.out.println("Add Java Book to cart");
             System.out.println("Pay for Java Book in cart");
             System.out.println("View The order ");
-
         } else {
             System.out.println("NO SHOPPING UNLESS YOU SIGNED IN!!!!!!");
         }
 
-
     }
-
         private static void loginVoid(String user, String password) {
            if (user.equals("user") && password.equals("abc123")){
                System.out.println("Login Successful");
