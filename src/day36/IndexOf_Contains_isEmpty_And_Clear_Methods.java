@@ -1,6 +1,6 @@
 package day36;
 import java.util.ArrayList;
-public class IndexOf_isEmpty_And_Clear_Methods {
+public class IndexOf_Contains_isEmpty_And_Clear_Methods {
     public static void main(String[] args) {
 
         ArrayList<Long> list = new ArrayList<>();
@@ -19,6 +19,10 @@ public class IndexOf_isEmpty_And_Clear_Methods {
         // IF WE DONT HAVE THAT ITEM , IT RETURN -1
         System.out.println("Location of 23L by using list.indexOf() = "
                 + list.indexOf(23L));
+
+        System.out.println("Do I have 10L = "+ (list.indexOf(10L)!=-1) );
+
+        System.out.println("Do I have 10L = "+ list.contains(10L) );
 
         // CHECK WHETHER A LIST IS EMPTY OR NOT
         System.out.println("is list empty = "+list.isEmpty());
