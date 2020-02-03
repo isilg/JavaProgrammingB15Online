@@ -1,12 +1,21 @@
 package test;
+
+import java.sql.SQLOutput;
+
 public class codingbat {
     public static void main(String[] args) {
 
 
-        String str = "Onder Girin";
-        for(int i=0; i<str.length(); i+=3){
-            System.out.println( str.charAt(i) );
-        }
+    String str = "Onder Girin";
+    String result ="";
+    for(int i=0;i<=str.length();i+=2){
+        result += str.charAt(i);
+    }
+     System.out.println(result);
+    }
+//        for(int i=0; i<str.length(); i+=3){
+//            System.out.println( str.charAt(i) );
+//        }
 
 
 
@@ -23,18 +32,18 @@ public class codingbat {
 //
 //
 //    }
-        String ID = "FB-457";
-        String[] splitID = ID.split("-");
-        System.out.println(splitID[1]);
-//      int number = Integer.parseInt(splitID[1]);
-//      System.out.println(number);
-
-        String twoNumbers = "100,600";
-        String[] arr = twoNumbers.split(",");
-        int part1= Integer.parseInt( arr[0] );
-        int part2 = Integer.parseInt( arr[1] );
-        System.out.println(  part1+part2 );
-    }
+//        String ID = "FB-457";
+//        String[] splitID = ID.split("-");
+//        System.out.println(splitID[1]);
+////      int number = Integer.parseInt(splitID[1]);
+////      System.out.println(number);
+//
+//        String twoNumbers = "100,600";
+//        String[] arr = twoNumbers.split(",");
+//        int part1= Integer.parseInt( arr[0] );
+//        int part2 = Integer.parseInt( arr[1] );
+//        System.out.println(  part1+part2 );
+//    }
 
 
 //    /**
