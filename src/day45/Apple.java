@@ -9,6 +9,7 @@ public class Apple extends Fruit {
         System.out.println("Message from Apple constructor");
     }
 
+
     public static void main (String[] args){
         Apple a1 = new Apple();
      }
