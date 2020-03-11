@@ -40,9 +40,5 @@ public class ArrayPractice1 {
         //YOU CAN JUST PRINT CHAR ARRAY LIKE THAT
         System.out.println(firstName);
 
-
-
-
-
     }
 }

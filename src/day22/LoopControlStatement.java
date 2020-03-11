@@ -1,14 +1,11 @@
 package day22;
-
 import org.w3c.dom.ls.LSOutput;
 import taskChannel.Array;
 
 import java.sql.SQLOutput;
 import java.util.Arrays;
-
 public class LoopControlStatement {
     public static void main(String[] args) {
-
         //Loop through each and every letter
         //1- Print every other letter
         //2- When you reach letter 'a' break the loop
@@ -48,8 +45,7 @@ public class LoopControlStatement {
 
 
 //      Print after 3rd 'a'
-//      Increase counter, when counter turn yo 3, break the loop
-
+//      Increase counter, when counter turn to 3, break the loop
 
         System.out.println();
         System.out.println("=============");

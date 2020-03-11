@@ -50,9 +50,16 @@ public class January_5th_ArrayList_teamMates {
             System.out.println( teamMates.get(i)+ "-"+ teamMates.get(i+1) );
         }
 
-
+        System.out.println("\t");
         // concat everyone in one string separated by -
-
+        String result = "";
+        for (int i=0; i<teamMates.size(); i++){
+            if( (teamMates.get(i) != teamMates.get(teamMates.size()-1) )) {
+                result += teamMates.get(i) + "-";
+            }else
+                result += teamMates.get(i);
+        }
+        System.out.println(result);
 
     }
 }
