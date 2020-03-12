@@ -16,7 +16,7 @@ public class CheckingAccount extends BankAccount {
         }
     }
 
-    @Override
+    @Override //@Override called annotation
     public String toString() {
         return "CheckingAccount{" +
                 "accountHolder='" + accountHolder + '\'' +
