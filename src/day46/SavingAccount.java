@@ -34,7 +34,7 @@ public class SavingAccount extends BankAccount{
                                     //the method then go back to the main and print!!
     }
 
-    @Override
+    @Override   //@Override called annotation
     public void deposit(int amount){
 
         //balance += amount + amount*interestRate;
