@@ -4,7 +4,8 @@ public class SQLProgrammer extends Programmer {
 
     //access modifier in subclass can have same visibility or
     //more visibility. What is more than default -> protected or public(public is the most visible)
-    //If you try private gives error that you can't make it less visible
+    //If you try private gives error that you can't make it less visible.
+    //Order is public-protected-default-private
     @Override //@Override called annotation
     void code() {  //protected void code()
         System.out.println("WRITING SQL QUERY");
