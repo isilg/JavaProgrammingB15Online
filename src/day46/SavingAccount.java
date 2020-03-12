@@ -16,7 +16,6 @@ public class SavingAccount extends BankAccount{
 
         s1.withdraw(1000);
         System.out.println(s1);
-
     }
 
     //in our SavingAccount, if you withdraw money, you'll get $30 penalty
@@ -25,10 +24,6 @@ public class SavingAccount extends BankAccount{
     public void withdraw(int amount){
         balance = balance - amount - 30;
     }
-
-
-
-
 
 
     @Override
