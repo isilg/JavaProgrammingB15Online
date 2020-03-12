@@ -5,11 +5,10 @@ public class SavingAccount extends BankAccount{
     double interestRate;
 
 
-    public  SavingAccount(String accountHolder,long accountNum, double balance, double interestRate ){
-        super(accountHolder,accountNum, balance);
+    public SavingAccount(String accountHolder,long accountNum, double balance, double interestRate ){
+        super(accountHolder, accountNum, balance);  //I can also type like  this.accountHolder= accountHolder; this.accountNum=accountNum because  we have these fields came from parent
         this.interestRate = interestRate;
     }
-
 
     public static void main(String[] args) {
         SavingAccount s1 = new SavingAccount("Kate", 12345,50000, 4.2);
