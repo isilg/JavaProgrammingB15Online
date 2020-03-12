@@ -9,7 +9,6 @@ public class BankAccount {
     //always add no arg constructor in super class to
     //avoid error in sub class because of super() call
     public BankAccount(){
-
     }
 
    //Creating constructor :  Generate - >Constructor
