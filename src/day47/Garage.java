@@ -15,12 +15,6 @@ public class Garage{
         c1.goBackward();
         c1.turn("Right");
 
-        GasCar c2 = new GasCar();
-        c2.start();
-        c2.goForward();
-        c2.goBackward();
-        c1.turn("Left");
-
 
     }
 }

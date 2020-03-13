@@ -35,10 +35,15 @@ public class ElectricCar extends Car {
        //Car c1 = new Car(); ERROR. We cannot create an object of abstract class
         ElectricCar e1 = new ElectricCar();
         e1.start();
-
         e1.goBackward();
         e1.goForward();
         e1.turn("Right");
+
+        GasCar c2 = new GasCar();
+        c2.start();
+        c2.goForward();
+        c2.goBackward();
+        c2.turn("Left");
 
     }
 }

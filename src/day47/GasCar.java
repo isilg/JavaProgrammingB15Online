@@ -2,6 +2,8 @@ package day47;
 
 //Gascar is concrete class. A class extends from
 //abstract class called concrete class. It is not a keyword
+//Concrete class must provide body for all inherited
+//abstract methods or it cannot compile
 public class GasCar extends Car{
 
     int gasLevel;
