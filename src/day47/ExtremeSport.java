@@ -1,6 +1,8 @@
 package day47;
 public class ExtremeSport extends Sport {
 
+    int x;
+
     @Override
     public void doSomethingElse() {
         System.out.println("Doing sth else");

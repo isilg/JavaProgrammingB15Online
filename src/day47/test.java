@@ -12,9 +12,16 @@ public class test extends ExtremeSport {
         super.hi();
     }
 
+
     public static void main(String[] args) {
         test t1 = new test();
         t1.doSomethingElse();
         t1.hi();
+
+        //trying to use parent field.
+        //x = 10;    ERROR
+        //t1.x = 10; System.out.println(x);   ERROR
+
+
     }
 }
