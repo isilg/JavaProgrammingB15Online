@@ -28,6 +28,11 @@ public class FinalVariablesPractice {
        // System.out.println(s1);  -> prints hash code(hashcode is address) because s1 is an address!
         System.out.println(s1.StudentID);
 
+        //Print school name - > How to reach a static value ->
+        //Not by using object! -> Class_name.variable_name
+        System.out.println(Student.school);
+
+        //Student.school = "MIT"; ERROR. YOU CANNOT CHANGE FINAL ATTRIBUTES VALUE
 
     }
 }
