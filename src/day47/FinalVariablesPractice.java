@@ -1,7 +1,6 @@
 package day47;
 public class FinalVariablesPractice {
 
-
     public static void main(String[] args) {
 
         int x = 10;  // declaring and initializing a variable(giving/assigning an initial value)
@@ -34,5 +33,15 @@ public class FinalVariablesPractice {
 
         //Student.school = "MIT"; ERROR. YOU CANNOT CHANGE FINAL ATTRIBUTES VALUE
 
+        printDoubledNumber(12);
+
+    }
+
+    public static void printDoubledNumber(final int x){
+        //x = x*2  IF YOU CALL THIS METHOD FROM MAIN AND GIVE A VALUE TO X
+        //AS SOON AS WHEN IT COMES TO THIS LINE X'S VALUE WILL CHANGE.
+        //BUT X IS A FINAL ARGUMENT SO IT CANNOT BE CHANGED
+        //System.out.println("x*2= " + x);
+        System.out.println("x*2= "+ x*2);  //DON'T CHANGE X BELOW, CHANGE IN System.out.println()
     }
 }
