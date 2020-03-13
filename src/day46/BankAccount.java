@@ -13,7 +13,7 @@ public class BankAccount {
 
    //Creating constructor :  Generate - >Constructor
     public BankAccount(String accountHolder, long accountNum, double balance) {
-        //super()  even we don't see super() is the first constructor we get no matter what
+        //super()  even we don't see super() is the first constructor we get no matter what from Object class
         this.accountHolder = accountHolder;
         this.accountNum = accountNum;
         this.balance = balance;
