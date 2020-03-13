@@ -12,7 +12,23 @@ public class ExtremeSport extends Sport {
         e1.doSomethingElse();
        //super.doSomething();  //ERROR.Main method is static means belong
                                //to class. Static cannot access to super
+        e1.differencePrivateAndFinal(10);
+        e1.differencePrivateAndFinal();  //I call not inherit final method
+        e1.difPrivateAndFinal();    //I call not inherit private method
     }
+
+
+    public void differencePrivateAndFinal(int n){
+        System.out.println("I have the same method name with a final parent" +
+                           " method but since I have different argument list" +
+                           " there is no error, otherwise it gives error.");
+    }
+
+    public void difPrivateAndFinal(){
+        System.out.println("I have same name with a private parent class method" +
+                           " but we are not related because I don't even see it, since it is private");
+    }
+
 
 //    @Override    -> ERROR. cannot override static method!
 //    public static void hi() {

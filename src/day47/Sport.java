@@ -19,4 +19,14 @@ public class Sport {
         System.out.println("Im static so you cannot override me!");
     }
 
+    final void differencePrivateAndFinal(){
+        System.out.println("Im a final method so subclass cannot inherit me and" +
+                            " also cannot even have a method same name with this method");
+    }
+
+    private void difPrivateAndFinal(){
+        System.out.println("Im a private method subclass cannot inherit me but it can have same name with this method");
+    }
+
+
 }
