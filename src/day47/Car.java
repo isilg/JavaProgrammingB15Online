@@ -17,5 +17,13 @@ public abstract class Car {
 
     public abstract void turn(String direction);
 
+    public void doCarThing(){
+        System.out.println("non-abstract method can be in an abstract class");
+    }
+
+    public static void doStaticThing(){
+        System.out.println("static method can be in an abstract class");
+    }
+
 }
 
