@@ -36,11 +36,6 @@ public class Kangaroo implements Bounceable, BoxerWithBellyPouch{
     }
 
 
-    @Override
-    public void read() {
-        System.out.println("DEFAULT METHOD HAS A BODY INTERFACE BUT I CHANGED IT AFTER INHERIT THE METHOD!!");
-    }
-
     //THIS METHOD NOT INHERITED IT JUST HAST THE SAME DATA TYPE AND
     //NAME WITH ITS PARENT INTERFACE BECAUSE STATIC METHODS CANNOT
     //INHERITED. THERE IS GREEN CIRCLES NEXT TO INHERITED METHODS
