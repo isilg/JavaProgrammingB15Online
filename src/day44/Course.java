@@ -19,5 +19,20 @@ public class Course {
         ++counter;   // I wanna see as new courses created by using counter
     }
 
+    public void showCounter(){
+        System.out.println("non-static method calling static field" +
+                            "in the same class directly typing its name" +
+                            "calling nonstatic method or field from another" +
+                            " class is done same way->create an object->" +
+                            "objectName.methodName or  objectName.fieldName"+counter);
+    }
+
+    public static void showCounter2(){
+        System.out.println("static method calls static field" +
+                           "in the same class directly typing its name " +
+                           "but from different class-> thisClassName.staticFieldName," +
+                           " calling static method from different class->" +
+                           " is done by same way thisClassName.staticMethodName "+counter);
+    }
 
 }
