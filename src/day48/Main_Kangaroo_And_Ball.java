@@ -10,6 +10,8 @@ public class Main_Kangaroo_And_Ball {
         System.out.println("k1= "+k1);
         k1.bounce();
         k1.eat();
+        k1.read();
+        k1.study();
 
         //I can use interface name as reference type
         Bounceable k2 = new Kangaroo("Toto",6);
