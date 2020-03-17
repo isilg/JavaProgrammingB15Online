@@ -1,6 +1,6 @@
 package day50;
 
-public class Main_Shape_Ans_Square {
+public class Main_Shape_And_Square {
 
     public static void main(String[] args) {
 
