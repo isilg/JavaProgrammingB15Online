@@ -18,9 +18,9 @@ public class Multiplication extends Question{
     @Override
     public String toString() {
         if(calculated==true) {
-            return super.toString()+ num1+""+operator+""+num2+" = "+answer;
+            return super.toString()+ " "+num1+" "+operator+" "+num2+" = "+answer;
         }else{
-            return super.toString()+ num1+""+operator+""+num2+" = ";
+            return super.toString()+ " "+num1+" "+operator+" "+num2+" = ";
         }
     }
 }

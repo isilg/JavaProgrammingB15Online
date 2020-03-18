@@ -10,13 +10,14 @@ public abstract class Question {
     String questionType = "Unknown";  //setting default value to avoid null. Not a good idea but we did it!
 
 
-    abstract void calculate();
-
     //Constructor
     public Question(String questionType, String operator){
         this.questionType = questionType;
         this.operator = operator;
     }
+
+    abstract void calculate();
+
 
     @Override
     public String toString() {
