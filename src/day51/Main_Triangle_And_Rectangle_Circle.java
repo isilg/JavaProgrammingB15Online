@@ -1,4 +1,5 @@
 package day51;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -37,6 +38,17 @@ public class Main_Triangle_And_Rectangle_Circle {
         List<Shape> shapeList = Arrays.asList(s1,s2,s3,s2,s1);
 
         for ( Shape each : shapeList ){
+            each.draw();
+        }
+
+        List<Shape> shapeList1 = new ArrayList<>();
+        shapeList1.add(s1);
+        shapeList1.add(s2);
+        shapeList1.add(s3);
+        shapeList1.add(s2);
+        shapeList1.add(s1);
+
+        for (Shape each : shapeList){
             each.draw();
         }
 
