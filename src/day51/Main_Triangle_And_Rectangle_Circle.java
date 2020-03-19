@@ -10,5 +10,10 @@ public class Main_Triangle_And_Rectangle_Circle {
         s1.draw();
         s2.draw();
         s3.draw();
+
+        Shape[] allShapes = {s1, s2, s3, new Triangle(), new Circle()};
+        for(Shape each : allShapes){
+            each.draw();
+        }
     }
 }
