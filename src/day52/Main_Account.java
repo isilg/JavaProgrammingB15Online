@@ -3,6 +3,7 @@ public class Main_Account {
 
     public static void main(String[] args) {
 
+        //Instantiate : creating an object of a specific class
          Account a1 = new Account("John" , 1000);
          Account a2 = new Account("Hanah", 7000);
          Account a3 = new Account("Katie", 5000);
