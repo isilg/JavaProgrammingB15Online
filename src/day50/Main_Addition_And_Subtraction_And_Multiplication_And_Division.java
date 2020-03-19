@@ -7,12 +7,14 @@ public class Main_Addition_And_Subtraction_And_Multiplication_And_Division {
 
     public static void main(String[] args) {
 
+        //Instantiate : creating an object of a specific class
         //Addition reference type(reference type=any type that is not primitive type)
         Addition q1 = new Addition(10, 90);
         System.out.println(q1);  //not calculated yet, just assign num1 and num2
         q1.calculate();
         System.out.println(q1);
 
+        //Instantiating q2 object
         //Subtraction is reference type
         Subtraction q2 =  new Subtraction(90, 10);
         System.out.println(q2);

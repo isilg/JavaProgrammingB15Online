@@ -4,6 +4,7 @@ public class Main_Shape_And_Square {
 
     public static void main(String[] args) {
 
+        //Instantiate : creating an object of a specific class
         Square s1 = new Square("my square", 10);
         System.out.println(s1.toString());
 
@@ -14,6 +15,7 @@ public class Main_Shape_And_Square {
 
         System.out.println("----------");
 
+        //Instantiating c1 object
         Circle c1 = new Circle(5, "my circle");
         System.out.println(c1);
 
