@@ -17,11 +17,9 @@ package day52;
 *          it should take all the balance from current account to other Account
 * Create a class called   Account Action with main method
 *    Test your code by creating few Account objects
-*   Optionally : let Account implements Comparable<Account>
-*   Create List<Account> and sort them using Collecions.sort(..)
-*   add a method inside Account class called
-*   isPalindrome return true if account name is palidrome (case and space should not matter)
-        */
+*   Optionally :
+* Add a method called isPalindrome and return true if account name is palindrome (case and space should not matter)
+*/
 
 public class Account implements Transferable{
 
@@ -55,15 +53,14 @@ public class Account implements Transferable{
     //to the other account, balance will be 0 here
     //set this balance to other account's balance
     //and then set this one to the 0
-        otherAccount.balance = this.balance;
+        otherAccount.balance += this.balance;
         this.balance = 0;
 
-    //II.Way-instead of this.balance u can use balance cause there is no confusion
-    //to other account do deposit how much I have here
-        otherAccount.deposit(this.balance);
-        //withdraw the balance that was sent to other account
-        this.withdraw(this.balance);
-
+//    //II.Way-instead of this.balance u can use balance cause there is no confusion
+//    //to other account do deposit how much I have here
+//        otherAccount.deposit(this.balance);
+//    //withdraw the balance that was sent to other account
+//        this.withdraw(this.balance);
 
     }
 
@@ -74,6 +71,17 @@ public class Account implements Transferable{
                 "name='" + name + '\'' +
                 ", balance=" + balance +
                 '}';
+    }
+
+    public boolean isPalindrome(){
+    //first store name in  temp then do all lowerCase and remove spaces
+       String nameCopy = this.name.toLowerCase().replace(" ","");
+    //reverse the value then check whether they r still same String or not
+        String reverseName = "";
+        for (int i = nameCopy.length()-1; i>=0; i--){
+            reverseName += nameCopy.charAt(i);
+        }
+        return nameCopy.equals(reverseName);
     }
 
 
