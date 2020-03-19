@@ -19,6 +19,7 @@ public class Person implements Comparable<Person>{
     //It'll give error p1 ve p2 objects are created in
     //PersonComparing class. So what can I use-> this kywrd
     //and other parameter I created as arg to my method
+    //it always return 1, -1, and 0. It is conventional
     @Override
     public int compareTo(Person otherPerson) {
         //Comparing by age
