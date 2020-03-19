@@ -40,7 +40,7 @@ public class Account implements Transferable{
     }
 
     //u deposit, u don't return anything this is why it is void
-    public void setDeposit(int amount){
+    public void deposit(int amount){
         balance += amount;
     }
 
@@ -51,6 +51,19 @@ public class Account implements Transferable{
 
     @Override
     public void transferAll(Account otherAccount) {
+    //get the balance of current account, deposit it
+    //to the other account, balance will be 0 here
+    //set this balance to other account's balance
+    //and then set this one to the 0
+        otherAccount.balance = this.balance;
+        this.balance = 0;
+
+    //II.Way-instead of this.balance u can use balance cause there is no confusion
+    //to other account do deposit how much I have here
+        otherAccount.deposit(this.balance);
+        //withdraw the balance that was sent to other account
+        this.withdraw(this.balance);
+
 
     }
 
