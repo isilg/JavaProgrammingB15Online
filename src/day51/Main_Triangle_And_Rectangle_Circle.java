@@ -41,6 +41,7 @@ public class Main_Triangle_And_Rectangle_Circle {
             each.draw();
         }
 
+        //ArrayList is a class, List is an interface that implement the shape
         List<Shape> shapeList1 = new ArrayList<>();
         shapeList1.add(s1);
         shapeList1.add(s2);
