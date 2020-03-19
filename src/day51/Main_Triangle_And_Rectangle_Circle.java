@@ -2,7 +2,6 @@ package day51;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 public class Main_Triangle_And_Rectangle_Circle {
 
     public static void main(String[] args) {
@@ -32,11 +31,11 @@ public class Main_Triangle_And_Rectangle_Circle {
         }
 
 
-        System.out.println("----------For each with list----------");
         //Quick way to create a list
         //Can we add or remove item from this sort way -->> NO
-        List<Shape> shapeList = Arrays.asList(s1,s2,s3,s2,s1);
+        List<Shape> shapeList = Arrays.asList(s1,s2,s3,s2,s1, new Triangle());
 
+        System.out.println("----------For each with list----------");
         for ( Shape each : shapeList ){
             each.draw();
         }
@@ -49,6 +48,8 @@ public class Main_Triangle_And_Rectangle_Circle {
         shapeList1.add(s2);
         shapeList1.add(s1);
 
+
+        System.out.println("----------For each loop with list----------");
         for (Shape each : shapeList){
             each.draw();
         }
