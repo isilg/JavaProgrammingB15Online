@@ -1,4 +1,7 @@
 package day51;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main_Triangle_And_Rectangle_Circle {
 
     public static void main(String[] args) {
@@ -11,9 +14,35 @@ public class Main_Triangle_And_Rectangle_Circle {
         s2.draw();
         s3.draw();
 
-        Shape[] allShapes = {s1, s2, s3, new Triangle(), new Circle()};
+
+        System.out.println("----------For each loop----------");
+       Shape[] allShapes = {s1, s2, s3, new Triangle(), new Circle()};
         for(Shape each : allShapes){
             each.draw();
         }
+
+
+        System.out.println("----------For loop----------");
+//        for(int i=0; i<allShapes.length; i++){
+//            allShapes[i].draw();
+//        }
+
+
+        System.out.println("----------For each with list----------");
+        //Quick way to create a list
+        //Can we add or remove item from this sort way -->> NO
+        List<Shape> shapeList = Arrays.asList(s1,s2,s3,s2,s1);
+
+        for ( Shape each : shapeList ){
+            each.draw();
+        }
+
+        System.out.println("----------For loop with list----------");
+        //use size for list
+        //use get() method to get each object then call draw method if you want
+        for (int i=0; i<shapeList.size(); i++){
+            shapeList.get(i).draw();
+        }
+
     }
 }
