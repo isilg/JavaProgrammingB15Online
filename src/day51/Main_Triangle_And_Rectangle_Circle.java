@@ -15,17 +15,20 @@ public class Main_Triangle_And_Rectangle_Circle {
         s3.draw();
 
 
+
+        Shape[] allShapes = {s1, s2, s3, new Triangle(), new Circle()};
+
         System.out.println("----------For each loop----------");
-       Shape[] allShapes = {s1, s2, s3, new Triangle(), new Circle()};
         for(Shape each : allShapes){
             each.draw();
         }
 
 
         System.out.println("----------For loop----------");
-//        for(int i=0; i<allShapes.length; i++){
-//            allShapes[i].draw();
-//        }
+        //allShapes is an array so we use length with List we use size
+        for(int i=0; i<allShapes.length; i++){
+            allShapes[i].draw();
+        }
 
 
         System.out.println("----------For each with list----------");
@@ -36,6 +39,7 @@ public class Main_Triangle_And_Rectangle_Circle {
         for ( Shape each : shapeList ){
             each.draw();
         }
+
 
         System.out.println("----------For loop with list----------");
         //use size for list
