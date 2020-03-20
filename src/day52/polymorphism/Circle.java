@@ -15,7 +15,7 @@ public void test(){
 }
 
 public void calculateArea(){
-    this.area = Math.PI * radius * radius;
+    area = Math.PI * radius * radius;
 }
 
 @Override

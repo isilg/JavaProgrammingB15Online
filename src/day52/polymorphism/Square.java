@@ -20,7 +20,7 @@ public class Square extends Shape {
     //Color coming from Drawable grand parent class class
     @Override
     public void draw() {
-        System.out.println("Draw 4 equal line with length," +
+        System.out.println("Draw 4 equal line with 90 degree," +
                 " length is: "+length+" with color "+COLOR); //COLOR or Drawable.COLOR both OKAY
     }
 
