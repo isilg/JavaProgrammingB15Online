@@ -23,7 +23,6 @@ public class Main_Account {
         a2.transferAll(a1);
         System.out.println("After transferring John's money to Hannah: "+a1 + a2);
 
-
         System.out.println("----------");
         a1.deposit(5000);
         System.out.println("Deposit 5000 to a1 "+a1);

@@ -32,5 +32,21 @@ public class Account_List_Sorting {
 //        }System.out.println("isil's account after transfer= "+i1);
 //        System.out.println(accountList);
 
+
+
+         //a1 = new Account("Polymorphism", 1000);
+    //What data types could be use in general not just for this example
+    //Type could be it's own type like Account, super class or interface
+    //that is implemented type, interface type that is implemented
+    //Account a1; - Account object can be refer its own type
+    //Comparable a1;  - type of a1 also can Comparable. It is not common
+    //Transferable a1;
+    //Object a1; - super type of ever class in Java
+        //a1 holds object's address but t1 is much wider container
+        //Account a1 = new Account("Polymorphism", 1000);
+        //Transferable t1 = new Account("Polymorphism", 1000);
+        //Object o1 = new Account("Polymorphism", 1000);
+
+
     }
 }
