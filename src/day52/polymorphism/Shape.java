@@ -11,7 +11,7 @@ package day52.polymorphism;
  * 					field : length
  * 					instance methods : (implement all abstract methods)
  * 					toString method
- * 				Cirlce
+ * 				Circle
  * 					field : radius
  * 					instance methods : (implement all abstract methods)
  * 					toString method
