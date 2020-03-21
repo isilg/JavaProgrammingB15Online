@@ -1,4 +1,6 @@
-package day52;
+package day52.warmUp;
+
+import day52.warmUp.Account;
 
 public interface Transferable {
 

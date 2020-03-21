@@ -1,4 +1,5 @@
-package day52;
+package day52.warmUp;
+
 /**
 * Create a class called Account
 * it has 2 fields - name as String (protected) , balance as int (private)

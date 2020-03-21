@@ -1,4 +1,7 @@
-package day52;
+package day52.warmUp;
+
+import day52.warmUp.Account;
+
 public class Main_Account {
 
     public static void main(String[] args) {
