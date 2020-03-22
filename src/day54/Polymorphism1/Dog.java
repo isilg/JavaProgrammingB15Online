@@ -1,6 +1,9 @@
-package day54;
+package day54.Polymorphism1;
 
-public class Dog extends Animal implements IndoorPet{
+import day54.Polymorphism1.Animal;
+import day54.Polymorphism1.IndoorPet;
+
+public class Dog extends Animal implements IndoorPet {
     String name;
 
     @Override

@@ -1,4 +1,5 @@
-package day54;
+package day54.Polymorphism1;
+
 public class Main_For_Dog {
 
     public static void main(String[] args) {
