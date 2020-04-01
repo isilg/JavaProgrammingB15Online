@@ -1,12 +1,8 @@
 package day52;
-
 import java.util.Arrays;
 import java.util.List;
-
 public class Main {
-
     public static void main(String[] args) {
-
 
         Book b1 = new PaperBook("Java", "Akbar",3);
         Book b2 = new PaperBook("Selenium", "Vasyl", 2);
