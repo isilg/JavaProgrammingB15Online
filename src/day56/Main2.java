@@ -1,5 +1,4 @@
 package day56;
-import javax.lang.model.util.Types;
 import java.util.ArrayList;
 import java.util.List;
 public class Main2 {
@@ -12,15 +11,12 @@ public class Main2 {
         productList.add(new Product("Sony TV", 499));
         productList.add(new Product("Macbook Air", 1299));
         productList.add(new Product("Iphone X", 999));
-        productList.add(new Product("Iphone XL",1299));
-        productList.add(new Product("Samsung 10", 1188));
-        productList.add(new Product("Samsung Note", 1288));
 
         System.out.println("productList.size() = " + productList.size());
 
 
-        //Check whether we have $499 Sony TV
-      //I.WAY -> How do I check sth inside a List ->using contain method
+        //QUESTION: Check whether we have $499 Sony TV
+        //I.WAY -> How do I check sth inside a List ->using contain method
           boolean result = productList.contains(new Product("Sony TV", 499));
           System.out.println("Does productList has $499 Sony TV: "+ result);
 
@@ -29,7 +25,7 @@ public class Main2 {
           System.out.println("Does productList has $299 Apple TV: " + result2);
 
 
-     //II.Way
+       //II.Way
 //        boolean result = false;
 //        for (Product each : productList){
 //            if (each.equals(new Product("Sony TV", 499))){
@@ -50,6 +46,15 @@ public class Main2 {
         //If it is complicated another way:
         Product sony = new Product("Sony TV", 499);
         System.out.println("Product list contains Sony TV?: " + productList.contains(sony));
+
+
+        //indexOf->returns index no of the object. If u dont have it, it return -1
+        //Use indexOf to check if the list has "Macbook" $2999
+        System.out.println( "Product list contains Sony TV?: " + productList.indexOf(new Product("Macbook",2999)) );
+
+        //Use indexOf to check if the list has "Macbook Air" $1999
+        System.out.println( "Product list contains Sony TV?: " + productList.indexOf(new Product("Macbook Air",1999)) );
+
 
         }
 
