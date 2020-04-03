@@ -49,8 +49,10 @@ public class Main2 {
 
 
         //indexOf->returns index no of the object. If u dont have it, it return -1
-        //Use indexOf to check if the list has "Macbook" $2999
-        System.out.println( "Product list contains Sony TV?: " + productList.indexOf(new Product("Macbook",2999)) );
+        //Use indexOf to check if the list has "Iphone X" $999
+        //!!!!!!!!!WHY IT RETURNS 2 INSTEAD OF 3?? -> WE JUST REMOVED SONY SO WE HAVE 3 ELEMENTS IN THE LIST CURRENTLY
+        System.out.println( "Product list contains Sony TV?: " + productList.indexOf(new Product("Iphone X", 999)) );
+
 
         //Use indexOf to check if the list has "Macbook Air" $1999
         System.out.println( "Product list contains Sony TV?: " + productList.indexOf(new Product("Macbook Air",1999)) );
