@@ -6,17 +6,15 @@ package day56;
  * 2 Arg constructor to accept name and List<Product>
  * First line of constructor should call no arg constructor to reuse initialization logic.
  * Inside constructor AddAll Products user passed to the instance variable last.
- *  * Create an instance void method called addProduct(Product p)
+ * Create an instance void method called addProduct(Product p)
  *  * Create an instance void method called removeProduct(Product p)
  *  * Create an instance void method called checkIfProductExist(Product p)
  *  * Hint : just call list remove method, it will internally call .equal method to decide which one to remove
  *  * more methods : find and return max price product, Find sum.of all products
  *  * Find list of products more than average
  */
-
 import java.util.ArrayList;
 import java.util.List;
-
 public class Store {
     String name;
     List<Product> allProducts;
@@ -35,9 +33,22 @@ public class Store {
         allProducts.addAll(otherList);   //adding all the products to the existing arrayList we have (we get all the products at the Main like starbucks object)
     }
 
-    public void addProduct(Product p){
 
+
+    public void addProduct(Product p){
+        allProducts.add(p);     //allProduct list will never be null, if we wont add Product
+                                // it will just return [], but it doesn't return null cause
+                               //inside no-arg const we did this.allProducts = new ArrayList<>();
     }
+
+    //Instead of using new keywrd all the time we can overload addProduct and give 2 arg, name and price
+    //What is important to overload a method? -> Method signature (Method name and parameter list)
+    //If u have same name and different param list u will be overloading the method right
+    public void addProduct(String productName, int productPrice){
+        Product newP = new Product(productName, productPrice);
+        allProducts.add(newP);
+    }
+
 
     public void removeProduct(Product p){
 

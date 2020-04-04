@@ -18,12 +18,22 @@ public class Main_Store {
         System.out.println("allProducts List= " + s1.allProducts);
 
 
+
         //Create another Store object and 3 Products
-        List<Product> starList = Arrays.asList(new Product("coffee", 4),
-                                               new Product("tea", 2),
-                                               new Product("cookie",2));
+        List<Product> starList = Arrays.asList(new Product("Coffee", 4),
+                                               new Product("Latte", 2),
+                                               new Product("Cookie",2));
         Store s2 = new Store("Starbucks", starList);
         System.out.println("\ns2 = " + s2);
+
+
+        Product p1 = new Product("CheeseCake" , 10);
+        s2.addProduct(p1);                                 //Calling addProduct(Product p) method
+        System.out.println("\ns2 " + s2);
+
+        s2.addProduct("Tea",3);  //Calling addProduct(String productName, int productPrice) method
+        System.out.println("\ns2 = " + s2);
+
 
     }
 }
