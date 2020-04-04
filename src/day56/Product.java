@@ -5,7 +5,7 @@ package day56;
  * Two products should be equal if they have the same fields value.
  * Practice Association: important
  * Create a class called Store
- * It has List<Product> as instance variable
+ * It has String name and List<Product> as instance variable
  * no arg constructor to initialize the list to empty ArrayList object
  * 1 Arg constructor to accept List<Product>
  * First line of constructor should call no arg constructor to reuse initialization logic.
@@ -31,10 +31,9 @@ public class Product extends Object{  //If I am gonna override .equals method fr
 
     @Override
     public boolean equals(Object obj){  // In Object class method signature of equals method is (Object obj). We have to have same signature
-        Product otherProduct = (Product) obj;  //downcasting Object product to Product
+        Product otherProduct = (Product) obj;  //down-casting Object product to Product
         return this.name.equals(otherProduct.name) && this.price==otherProduct.price;    //Compare the name & price
     }
-
 
     public String getName() {
         return name;
