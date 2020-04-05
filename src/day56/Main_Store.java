@@ -26,7 +26,10 @@ public class Main_Store {
         //Create another Store object and 3 Products
         List<Product> starList = Arrays.asList(new Product("Coffee", 4),
                                                new Product("Latte", 2),
-                                               new Product("Cookie",2));
+                                               new Product("Cookie",2),
+                                               new Product("Sandwich",10),
+                                               new Product("Nuts",7),
+                                               new Product("Lemonade",6));
         Store s2 = new Store("Starbucks", starList);
         System.out.println("\ns2 = " + s2);
 
@@ -42,7 +45,7 @@ public class Main_Store {
         System.out.println("\ns2 = " + s2);
 
 
-        System.out.println("\ns2.getProductCount() = " + s2.getProductCount());
+        System.out.println("\ns2.getProductCount() = " + s2.productCount());
 
 
 
@@ -66,6 +69,25 @@ public class Main_Store {
        s2.removeProduct(p1);
        System.out.println("\nProduct list: " + s2);
        s2.removeProduct(p1);    //try to remove p1 again
+
+
+
+        System.out.println(s2);
+
+
+        s2.maxPriceProduct();
+
+
+        System.out.println( s2.sumOfProducts() );
+
+
+        System.out.println("Average price: "+s2.averagePrice());
+        System.out.println("Products have price more than average: "
+                                + s2.moreThanAveragePrice());
+
+        System.out.println("Most expensive product is: "+s2.maxPriceProduct());
+
+
 
     }
 }
