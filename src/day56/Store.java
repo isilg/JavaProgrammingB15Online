@@ -7,17 +7,20 @@ package day56;
  * First line of constructor should call no arg constructor to reuse initialization logic.
  * Inside constructor AddAll Products user passed to the instance variable last.
  * Create an instance void method called addProduct(Product p)
- *  * Create an instance void method called removeProduct(Product p)
- *  * Create an instance void method called checkIfProductExist(Product p)
- *  * Hint : just call list remove method, it will internally call .equal method to decide which one to remove
- *  * more methods : find and return max price product, Find sum.of all products
+ * Create an instance method called getProductCount to count how many product you have
+ * Create an instance void method called displayProducts() to display the products(you can write toString() method but instead of it create a method)
+ * Create an instance void method to see where is that product exactly in the list
+ * Create an instance void method called removeProduct(Product p)
+ * Create an instance void method called checkIfProductExist(Product p)
+ * Hint: just call list remove method, it will internally call .equal method to decide which one to remove
+ * more methods: find and return max price product, Find sum.of all products
  *  * Find list of products more than average
  */
 import java.util.ArrayList;
 import java.util.List;
 public class Store {
     String name;
-    List<Product> allProducts;
+    private List<Product> allProducts;
 
 
     public Store(){  // no-arg constructor
@@ -50,12 +53,33 @@ public class Store {
     }
 
 
-    public void removeProduct(Product p){
-
+    public int getProductCount(){
+        return allProducts.size();
     }
 
-    public void checkIfProductExist(Product p){
 
+    public void displayProducts(){
+        System.out.println(name +" Store has: ");
+        for (Product each : allProducts){
+            System.out.println(each);
+        }
+    }
+
+
+    public int indexOfProduct(Product p){
+        return allProducts.indexOf(p);
+    }
+
+    public void removeProduct(Product p){
+        if(checkIfProductExist(p)==true) {
+            allProducts.remove(p);
+        }else{
+        System.out.println("We don't have " + p);
+        }
+     }
+
+    public boolean checkIfProductExist(Product p){
+        return allProducts.contains(p);
     }
 
     @Override
