@@ -3,7 +3,8 @@ import java.io.IOException;
 public class ThrowingException {
     public static void main(String[] args) throws IOException {
 
-//        DIFFERENCE BETWEEN THROW AND THROWS-INTERVIEW
+       // DIFFERENCE BETWEEN THROW AND THROWS- INTERVIEW
+       // WHAT IS CHECKED AND UNCHECKED EXCEPTION  %100 INTERVIEW
 
 
         //Creating NullPointerException object
